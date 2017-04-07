@@ -41,14 +41,17 @@ Last Updated on
 \end{textblock}}
 
 % Name command
-\newcommand{\namesection}[3]{
+\newcommand{\namesection}[4]{
 	\centering{
 		\sffamily
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{40pt}{10cm}\selectfont #1 
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
 	\vspace{5pt}
-	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3
+        } \\
+	\vspace{5pt}
+	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #4}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 	\vspace{-15pt}
 }
