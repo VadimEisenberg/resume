@@ -10,8 +10,8 @@
 % https://github.com/deedydas/Deedy-Resume
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% IMPORTANT: Run XeLaTex on it, not regular Latex
 \documentclass[]{deedy-resume}
-
 
 \begin{document}
 
@@ -20,7 +20,7 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\lastupdated
+%d\lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -61,33 +61,53 @@ GPA 90 (cum laude)
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFESSIONAL SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Skills}
+Software Engineering and Architecture \textbullet{} Programming Languages \textbullet{} Software Design/Design Patterns \textbullet{} Application Environments/Application Frameworks/Middleware \textbullet{} Semantic Web and Database technologies \textbullet{} Mobile and Web applications
+\sectionsep
+
+\subsection{Languages}
+Java \textbullet{} JavaScript \textbullet{} Swift \textbullet{} C \textbullet{}  C++ \\
+Ruby  \textbullet{}  Bash Shell \textbullet{}  Perl \textbullet{} Assembly
+\sectionsep
+
+\subsection{Environments}
+Unix \textbullet{}  Android \textbullet{}  OSGi \textbullet{} iOS \textbullet{} Node.js
+\sectionsep
+
+\subsection{Tools}
+git \textbullet{}  Make \textbullet{} Maven \textbullet{}  Jenkins  \textbullet{} bash
+\sectionsep
+
+\subsection{Products}
+DB2 \textbullet{}  WebSphere Application Server\\
+DataStage \textbullet{}  Worklight  \textbullet{} BPM   \textbullet{} Bluemix
+\sectionsep
+
+\section{Language Skills}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item English (fluent)
+\item Hebrew (native-like)
+\item Russian (native)
+\item German (fluent reading)
+\item Italian (basic reading)
+\item Polish (basic reading)
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Links}
 LinkedIn:  \href{https://www.linkedin.com/in/vadimeisenberg}{vadimeisenberg} \\
-GitHub: \href{https://github.com/vadimeisenbergibm}{vadimeisenbergibm} \\
+GitHub (work): \href{https://github.com/vadimeisenbergibm}{vadimeisenbergibm} \\
+GitHub (private): \href{https://github.com/vadimeisenberg}{vadimeisenberg} \\
 StackOverflow: \href{http://stackoverflow.com/users/6028420/vadim-eisenberg}{6028420/vadim-eisenberg} \\
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Languages}
-\location{Extensive:}
-JavaScript \textbullet{} Python \textbullet{} Shell \textbullet{}  HTML/CSS \\
-SML \textbullet{} Sass \\
-\location{Comfortable:}
-C \textbullet{} C++ \textbullet{} Java \textbullet{} Haskell \textbullet{} Ruby \\
-\sectionsep
-
-\subsection{Technologies}
-\location{Extensive:}
-Node.js \textbullet{} React \textbullet{} Git \textbullet{} Unix \\
-\location{Comfortable:}
-Django \textbullet{} SQL \textbullet{} MongoDB \textbullet{} VPSs
+Blog (work): \href{https://developer.ibm.com/swift/author/vadime/}{developer.ibm.com/swift/author/vadime} \\
+Blog (private):  \href{http://vadimeisenberg.blogspot.com}{vadimeisenberg.blogspot.com}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -147,6 +167,20 @@ Django \textbullet{} SQL \textbullet{} MongoDB \textbullet{} VPSs
 \item  1998--2002 Part time position (student). Worked on development of FDPR and FDPR-Pro post-link optimization tools
 \end{tightemize}
 \sectionsep
+
+\section{PERSONAL SKILLS}
+Passionate about Software Engineering \textbullet{} Dedicated to execution \textbullet{}  Quick learner\\
+Flexible team player \textbullet{} Teacher \textbullet{}  Able to work under pressure \textbullet{} Hands-on \\
+Team Leader \textbullet{} Creative Problem Solver 
+\sectionsep
+
+\section{Publications}
+\renewcommand{\section}[2]{}% remove References tittle
+\bibliographystyle{plainyr}
+\bibliography{publications}
+\nocite{*}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%     Other
