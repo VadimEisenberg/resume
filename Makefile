@@ -4,7 +4,7 @@ all: $(TARGET).pdf
 
 ## Generalized rule: how to build a .pdf from each .tex
 LATEXPDFS=$(patsubst %.tex,%.pdf,$(wildcard *.tex))
-$(LATEXPDFS): %.pdf: %.tex
+$(LATEXPDFS): %.pdf: %.tex deedy-resume.cls
 	xelatex -interaction nonstopmode $(patsubst %.pdf,%.tex,$@)
 
 clean:
